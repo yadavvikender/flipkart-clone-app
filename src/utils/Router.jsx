@@ -12,9 +12,10 @@ const Router = () => {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='' element={<HomePage/>}/>
-          <Route path='products' element={<Products />} />
+          <Route path='products' element={<Products />}/>
+          <Route path='products/product/:id' element={<Product />}/>
           <Route path='cart' element={<Cart />} />
-          <Route path='product' element={<Product />} />
+          {/* <Route path='product' element={<Product />} /> */}
         </Route>
       </Routes>
     </div>

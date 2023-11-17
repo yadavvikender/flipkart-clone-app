@@ -22,16 +22,16 @@ const Total = () => {
 
     console.log('I am rendering');
   };
-  
+
   useEffect(() => {
     calculateTotal()
   }, [cartProducts])
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <div style={{ display: 'flex', justifyContent: 'space-between' ,fontSize:'16px'}}>
       <div>Total</div>
-      <div>Quantity:{total.count}</div>
-      <div>Price:{total.totalPrice}</div>
+      <div>Quantity : {total.count}</div>
+      <div>Price : {total.totalPrice}</div>
       <div><button >CheckOut</button></div>
     </div>
   )
